@@ -7,6 +7,10 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
+// module.exports = {
+//   //...
+//   plugins: [require("daisyui")],
+// }
