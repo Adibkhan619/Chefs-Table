@@ -4,25 +4,38 @@ import Cook from "./Components/Cook/Cook";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Cards from "./Components/RecipeCards/Cards";
+import CurrentlyCooking from "./Components/CurrentlyCooking/CurrentlyCooking";
 
 function App() {
   const [cookCard, setCookCard] = useState([]);
+  const [currentlyCook, setCurrentlyCook] = useState([]);
 
   const handleWantToCook = (p) => {
-    // setCookCard(...cookCard, p);
-    // console.log([p]);
-
-    const isExist = cookCard.find(item => item.recipe_id == p.recipe_id);
-    if(isExist){
-      console.log('ache');
-    }else{
-      
+    const isExist = cookCard.find((item) => item.recipe_id == p.recipe_id);
+    if (isExist) {
+      alert("try again");
+    } else {
       const newCard = [...cookCard, p];
-    setCookCard(newCard);
+      setCookCard(newCard);
     }
-    
   };
-  // console.log(cookCard);
+
+  const handlePreparing = (i) => {
+    // const isExist = cookCard.filter((item) => item.recipe_id !== i.recipe_id);
+    // if (isExist) {
+    //   setCookCard(...cookCard, );
+    // } 
+    // else {
+    //   const newCard = [...cookCard, p];
+    //   setCookCard(newCard);
+    // }
+
+
+
+    setCurrentlyCook([...currentlyCook,i])
+
+  }
+  console.log(currentlyCook);
 
   return (
     <>
@@ -40,13 +53,17 @@ function App() {
         </p>
       </div>
 
-      {/* Recipe Cards */}
-      <div className="flex gap-10">
+      {/* Recipe Cards and Cook table*/}
+
+      <div className="flex gap-10 justify-center">
+        {/* Recipe Cards */}
         <Cards handleWantToCook={handleWantToCook}></Cards>
 
         {/* Cook table */}
-        <div className="text-center border rounded-3xl space-y-5 py-10 mx-20 text-gray-400">
-          <h1 className="font-semibold text-black text-2xl">Want to Cook: 0{cookCard.length} </h1>
+        <div className="text-center border rounded-3xl space-y-5 py-10  text-gray-400">
+          <h1 className="font-semibold text-gray-800 text-2xl">
+            Want to Cook: 0{cookCard.length}{" "}
+          </h1>
           <hr />
           <table className=" table fira-sans">
             <thead className="font-medium text-[20px]">
@@ -59,10 +76,31 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              {cookCard.map((food, idx) => (
-                <Cook key={idx}  food={food}></Cook>
-              ))}             
-            </tbody>
+              {cookCard.map((food,idx) => (
+                <Cook key={idx} handlePreparing={handlePreparing} food={food}></Cook>
+              ))}
+            </tbody>          
+          </table>
+          <h1 className="font-semibold text-gray-800 text-2xl mt-24">
+            Want to Cook: 0{cookCard.length}{" "}
+          </h1>
+          <hr />
+          <table className=" table fira-sans">
+            <thead className="font-medium text-[20px]">
+              <tr className=" ">
+                <th></th>
+                <th>Name</th>
+                <th>Time</th>
+                <th>Calories</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              { currentlyCook.map((item, idx) => (
+                <CurrentlyCooking key={idx} item={item} currentlyCook={currentlyCook}></CurrentlyCooking>
+              ))               
+                }
+            </tbody>          
           </table>
         </div>
       </div>
