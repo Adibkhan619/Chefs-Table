@@ -10,6 +10,7 @@ import CurrentlyCooking from "./Components/CurrentlyCooking/CurrentlyCooking";
 function App() {
   const [cookCard, setCookCard] = useState([]);
   const [currentlyCook, setCurrentlyCook] = useState([]);
+  const [time, setTime] = useState(0);
 
   const handleWantToCook = (p) => {
     const isExist = cookCard.find((item) => item.recipe_id == p.recipe_id);
@@ -24,15 +25,27 @@ function App() {
   const handlePreparing = (i) => {
 
 setCurrentlyCook([...currentlyCook, i]);
-
+totalTime();
+console.log(time)
     const isExist = cookCard.filter((item) => item.recipe_id !== i.recipe_id);
     if (isExist) {
       setCookCard(isExist);
-      console.log(cookCard);
+      // console.log(cookCard);
     }
   };
-  console.log(currentlyCook);
+  // console.log(currentlyCook);
 
+  const totalTime = () => {
+    currentlyCook.map(item => { 
+      const sum = item.preparing_time;
+      const sumValue = parseInt(sum);
+      const totalTime = time + sumValue;
+      setTime(time+totalTime);
+      
+    })
+  }
+;
+;
   return (
     <>
       <Navbar></Navbar>
@@ -51,14 +64,14 @@ setCurrentlyCook([...currentlyCook, i]);
 
       {/* Recipe Cards and Cook table*/}
 
-      <div className="flex gap-10 justify-center">
+      <div className="lg:flex lg:flex-row flex-col gap-10 justify-center">
         {/* Recipe Cards */}
         <Cards handleWantToCook={handleWantToCook}></Cards>
 
         {/* Cook table */}
         <div className="text-center border rounded-3xl space-y-5 py-10  text-gray-400">
           <h1 className="font-semibold text-gray-800 text-2xl">
-            Want to Cook: 0{cookCard.length}{" "}
+            Want to Cook: {cookCard.length}
           </h1>
           <hr />
           <table className=" table fira-sans">
@@ -76,7 +89,7 @@ setCurrentlyCook([...currentlyCook, i]);
                   <tr className="bg-gray-100">
                     <td>{index+1}</td>
                     <td>{food.recipe_name}</td>
-                    <td>{food.preparing_time}</td>
+                    <td>{food.preparing_time} min</td>
                     <td>{food.calories}</td>
                     <td>
                       <button
@@ -92,7 +105,7 @@ setCurrentlyCook([...currentlyCook, i]);
             </tbody>
           </table>
           <h1 className="font-semibold text-gray-800 text-2xl mt-24">
-            Want to Cook: 0{cookCard.length}{" "}
+            Currently Cooking: {currentlyCook.length}
           </h1>
           <hr />
           <table className=" table fira-sans">
@@ -101,8 +114,7 @@ setCurrentlyCook([...currentlyCook, i]);
                 <th></th>
                 <th>Name</th>
                 <th>Time</th>
-                <th>Calories</th>
-                
+                <th>Calories</th>               
               </tr>
             </thead>
             <tbody>
@@ -115,6 +127,10 @@ setCurrentlyCook([...currentlyCook, i]);
               ))}
             </tbody>
           </table>
+          <div>
+            <p>Total Time:{}</p>
+            <p>Total Calories:</p>
+          </div>
         </div>
       </div>
     </>

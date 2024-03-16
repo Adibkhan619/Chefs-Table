@@ -12,7 +12,7 @@ const CurrentlyCooking = ({currentlyCook, item}) => {
 <tr className="bg-gray-100">
       <td>{recipe_id}</td>
       <td>{recipe_name}</td>
-      <td>{preparing_time}</td>
+      <td>{preparing_time} min</td>
       <td>{calories}</td>     
     </tr>
        

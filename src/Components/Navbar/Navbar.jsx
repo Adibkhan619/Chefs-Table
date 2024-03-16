@@ -19,17 +19,17 @@ const Navbar = () => {
     <a className="btn btn-ghost text-3xl font-bold">Recipe Calories</a>
   </div>
   <div className="navbar-center text-gray-500 text-base hidden lg:flex">
-    <ul className="menu menu-horizontal text-base px-1">
+    <ul className="menu lg:menu-horizontal text-base px-1">
       <li><a>Home</a></li>
       <li><a>Recipes</a></li>
       <li><a>About</a></li>
       <li><a>Search</a></li>
     </ul>
   </div>
-  <div className="navbar-end ">
+  <div className="navbar-end hidden lg:flex">
   <img className=" bg-gray-100 p-5 rounded-l-full" src="../../../public/icon/Frame.png" alt="" />
-    <input className="py-5 border-0  bg-gray-100 rounded-r-full mr-5" type="text" placeholder="Search" />
-    <img src="../../../public/icon/Frame 5.png" alt="" />
+    <input className="lg:flex hidden py-5 border-0  bg-gray-100 rounded-r-full mr-5" type="text" placeholder="Search" />
+    <img className="" src="../../../public/icon/Frame 5.png" alt="" />
   </div>
 </div>
         </div>

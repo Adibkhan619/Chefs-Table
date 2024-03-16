@@ -30,7 +30,7 @@ const SingleCard = ({ card, handleWantToCook }) => {
       <div className="flex gap-10 items-center">
         <div className="flex gap-3">
           <img className="w-5 h-5" src="/public/icon/clock.png" alt="" />
-          <p>{preparing_time}</p>
+          <p>{preparing_time} min</p>
         </div>
         <div className="flex gap-3">
           <img className="w-5 h-5" src="/public/icon/fire.png" alt="" />
