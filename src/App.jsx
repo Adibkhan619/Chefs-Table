@@ -11,10 +11,18 @@ function App() {
   const handleWantToCook = (p) => {
     // setCookCard(...cookCard, p);
     // console.log([p]);
-    const newCard = [...cookCard, p];
+
+    const isExist = cookCard.find(item => item.recipe_id == p.recipe_id);
+    if(isExist){
+      console.log('ache');
+    }else{
+      
+      const newCard = [...cookCard, p];
     setCookCard(newCard);
+    }
+    
   };
-// console.log(cookCard);
+  // console.log(cookCard);
 
   return (
     <>
@@ -22,7 +30,7 @@ function App() {
       <Hero></Hero>
 
       {/* Our recipe  */}
-      <div className="text-center lg:mx-40 mt-24 mb-16 space-y-5">
+      <div className="text-center lg:mx-40 mt-16 mb-16 space-y-5">
         <h1 className="font-semibold text-[40px]">Our Recipe</h1>
         <p className="text-gray-500">
           Dive into the heart of flavor with our signature recipes. Crafted with
@@ -36,29 +44,27 @@ function App() {
       <div className="flex gap-10">
         <Cards handleWantToCook={handleWantToCook}></Cards>
 
-{/* Cook table */}
-        
-        <div className="text-center border rounded-3xl space-y-5 p-10 mx-20">
-      <h1>Want to Cook:{cookCard.length} </h1>
-      <hr />
-      <table className="table-auto table ">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Time</th>
-            <th>Calories</th>
-          </tr>
-        </thead>
-       
-        <tbody>
-          {cookCard.map(food =><Cook food={food} ></Cook>)}
-          <tr></tr>
-          <tr></tr>
-        </tbody>
-      </table>
-    </div>
-        
-        
+        {/* Cook table */}
+        <div className="text-center border rounded-3xl space-y-5 py-10 mx-20 text-gray-400">
+          <h1 className="font-semibold text-black text-2xl">Want to Cook: 0{cookCard.length} </h1>
+          <hr />
+          <table className=" table fira-sans">
+            <thead className="font-medium text-[20px]">
+              <tr className=" ">
+                <th></th>
+                <th>Name</th>
+                <th>Time</th>
+                <th>Calories</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {cookCard.map((food, idx) => (
+                <Cook key={idx}  food={food}></Cook>
+              ))}             
+            </tbody>
+          </table>
+        </div>
       </div>
     </>
   );
