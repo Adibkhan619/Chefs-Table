@@ -1,6 +1,6 @@
 [
       {
-        "recipe_image": "chicken_curry.jpg",
+        "recipe_image": "/public/img/chicken_curry.jpg",
         "recipe_id": 1,
         "recipe_name": "Spicy Chicken Curry",
         "short_description": "Indulge in the bold flavors of this aromatic chicken curry, packed with spices and herbs.",
@@ -14,7 +14,7 @@
         "calories": "380 calories"
       },
       {
-        "recipe_image": "vegetable_stir_fry.jpg",
+        "recipe_image": "/public/img/vegetable_stir_fry.jpg",
         "recipe_id": 2,
         "recipe_name": "Vegetable Stir Fry",
         "short_description": "Enjoy a burst of colors and nutrients with this vibrant vegetable stir-fry, a perfect balance of crunch and freshness.",
@@ -28,7 +28,7 @@
         "calories": "220 calories"
       },
       {
-        "recipe_image": "pasta_arrabbiata.jpg",
+        "recipe_image": "/public/img/pasta_arrabbiata.jpg",
         "recipe_id": 3,
         "recipe_name": "Pasta Arrabbiata",
         "short_description": "Experience the fiery kick of this classic Italian dish, with a rich tomato sauce and a hint of chili heat.",
@@ -42,7 +42,7 @@
         "calories": "320 calories"
       },
       {
-        "recipe_image": "sushi_roll.jpg",
+        "recipe_image": "/public/img/sushi_roll.jpg",
         "recipe_id": 4,
         "recipe_name": "California Sushi Roll",
         "short_description": "Delight your senses with the exquisite flavors of this sushi roll, filled with crab, avocado, and cucumber.",
@@ -56,7 +56,7 @@
         "calories": "250 calories"
       },
       {
-        "recipe_image": "grilled_salmon.jpg",
+        "recipe_image": "/public/img/grilled_salmon.jpg",
         "recipe_id": 5,
         "recipe_name": "Grilled Salmon",
         "short_description": "Savor the tender juiciness of grilled salmon, seasoned to perfection with herbs and lemon zest.",
@@ -70,7 +70,7 @@
         "calories": "290 calories"
       },
       {
-        "recipe_image": "chocolate_mousse.jpg",
+        "recipe_image": "/public/img/chocolate_mousse.jpg",
         "recipe_id": 6,
         "recipe_name": "Decadent Chocolate Mousse",
         "short_description": "Indulge in the velvety richness of this luscious chocolate mousse, a heavenly treat for chocolate lovers.",
@@ -84,7 +84,7 @@
         "calories": "200 calories"
       },
       {
-        "recipe_image": "spaghetti_bolognese.jpg",
+        "recipe_image": "/public/img/spaghetti_bolognese.png",
         "recipe_id": 7,
         "recipe_name": "Spaghetti Bolognese",
         "short_description": "Savor the comforting flavors of this classic Italian pasta dish, featuring a rich and hearty meat sauce.",
@@ -98,7 +98,7 @@
         "calories": "350 calories"
       },
       {
-        "recipe_image": "chicken_caesar_salad.jpg",
+        "recipe_image": "/public/img/Chicken Caesar Salad.png",
         "recipe_id": 8,
         "recipe_name": "Chicken Caesar Salad",
         "short_description": "Enjoy a satisfying blend of crisp romaine lettuce, grilled chicken, crunchy croutons, and tangy Caesar dressing.",

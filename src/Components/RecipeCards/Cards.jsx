@@ -1,6 +1,7 @@
 // import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import SingleCard from '../SingleCard/SingleCard';
 
 const Cards = () => {
     const [cards, setCards] = useState([]);
@@ -8,7 +9,7 @@ const Cards = () => {
     useEffect(()=>{
         fetch('/public/itemData.json')
         .then(res => res.json())
-        .then(data => console.log(data));
+        .then(data => setCards(data));
         
     }, [])
 
@@ -17,12 +18,13 @@ const Cards = () => {
 
 
     return (
-        <div>
+        <div className='grid grid-cols-2'>
             {
-                cards
+                cards.map((card , idx) => <SingleCard card={card} key={idx}></SingleCard>)
             }
         </div>
     );
 };
+
 
 export default Cards;
