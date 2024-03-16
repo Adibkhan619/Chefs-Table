@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-key */
 import { useState } from "react";
 import "./App.css";
-import Cook from "./Components/Cook/Cook";
+// import Cook from "./Components/Cook/Cook";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Cards from "./Components/RecipeCards/Cards";
@@ -21,20 +22,15 @@ function App() {
   };
 
   const handlePreparing = (i) => {
-    // const isExist = cookCard.filter((item) => item.recipe_id !== i.recipe_id);
-    // if (isExist) {
-    //   setCookCard(...cookCard, );
-    // } 
-    // else {
-    //   const newCard = [...cookCard, p];
-    //   setCookCard(newCard);
-    // }
 
+setCurrentlyCook([...currentlyCook, i]);
 
-
-    setCurrentlyCook([...currentlyCook,i])
-
-  }
+    const isExist = cookCard.filter((item) => item.recipe_id !== i.recipe_id);
+    if (isExist) {
+      setCookCard(isExist);
+      console.log(cookCard);
+    }
+  };
   console.log(currentlyCook);
 
   return (
@@ -76,10 +72,24 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              {cookCard.map((food,idx) => (
-                <Cook key={idx} handlePreparing={handlePreparing} food={food}></Cook>
+              {cookCard.map((food, index) => (                 
+                  <tr className="bg-gray-100">
+                    <td>{index+1}</td>
+                    <td>{food.recipe_name}</td>
+                    <td>{food.preparing_time}</td>
+                    <td>{food.calories}</td>
+                    <td>
+                      <button
+                        onClick={() => handlePreparing(food)}
+                        className="btn bg-green-400 rounded-full"
+                      >
+                        Preparing
+                      </button>
+                    </td>
+                  </tr>              
               ))}
-            </tbody>          
+
+            </tbody>
           </table>
           <h1 className="font-semibold text-gray-800 text-2xl mt-24">
             Want to Cook: 0{cookCard.length}{" "}
@@ -92,15 +102,18 @@ function App() {
                 <th>Name</th>
                 <th>Time</th>
                 <th>Calories</th>
-                <th></th>
+                
               </tr>
             </thead>
             <tbody>
-              { currentlyCook.map((item, idx) => (
-                <CurrentlyCooking key={idx} item={item} currentlyCook={currentlyCook}></CurrentlyCooking>
-              ))               
-                }
-            </tbody>          
+              {currentlyCook.map((item, idx) => (
+                <CurrentlyCooking
+                  key={idx}
+                  item={item}
+                  currentlyCook={currentlyCook}
+                ></CurrentlyCooking>
+              ))}
+            </tbody>
           </table>
         </div>
       </div>
