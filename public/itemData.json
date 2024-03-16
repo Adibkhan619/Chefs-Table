@@ -1,0 +1,115 @@
+[
+      {
+        "recipe_image": "chicken_curry.jpg",
+        "recipe_id": 1,
+        "recipe_name": "Spicy Chicken Curry",
+        "short_description": "Indulge in the bold flavors of this aromatic chicken curry, packed with spices and herbs.",
+        "ingredients": [
+          "550 g chicken",
+          "120 ml soy sauce",
+          "200 g basil leaves",
+          "400 g mushrooms"
+        ],
+        "preparing_time": "45 min",
+        "calories": "380 calories"
+      },
+      {
+        "recipe_image": "vegetable_stir_fry.jpg",
+        "recipe_id": 2,
+        "recipe_name": "Vegetable Stir Fry",
+        "short_description": "Enjoy a burst of colors and nutrients with this vibrant vegetable stir-fry, a perfect balance of crunch and freshness.",
+        "ingredients": [
+          "300 g mixed vegetables",
+          "100 g tofu",
+          "50 ml sesame oil",
+          "150 g broccoli"
+        ],
+        "preparing_time": "25 min",
+        "calories": "220 calories"
+      },
+      {
+        "recipe_image": "pasta_arrabbiata.jpg",
+        "recipe_id": 3,
+        "recipe_name": "Pasta Arrabbiata",
+        "short_description": "Experience the fiery kick of this classic Italian dish, with a rich tomato sauce and a hint of chili heat.",
+        "ingredients": [
+          "400 g pasta",
+          "500 ml tomato sauce",
+          "100 g pancetta",
+          "2 cloves garlic"
+        ],
+        "preparing_time": "30 min",
+        "calories": "320 calories"
+      },
+      {
+        "recipe_image": "sushi_roll.jpg",
+        "recipe_id": 4,
+        "recipe_name": "California Sushi Roll",
+        "short_description": "Delight your senses with the exquisite flavors of this sushi roll, filled with crab, avocado, and cucumber.",
+        "ingredients": [
+          "200 g sushi rice",
+          "100 g crab meat",
+          "1 avocado",
+          "100 g cucumber"
+        ],
+        "preparing_time": "40 min",
+        "calories": "250 calories"
+      },
+      {
+        "recipe_image": "grilled_salmon.jpg",
+        "recipe_id": 5,
+        "recipe_name": "Grilled Salmon",
+        "short_description": "Savor the tender juiciness of grilled salmon, seasoned to perfection with herbs and lemon zest.",
+        "ingredients": [
+          "300 g salmon fillet",
+          "50 g butter",
+          "1 lemon",
+          "100 g asparagus"
+        ],
+        "preparing_time": "35 min",
+        "calories": "290 calories"
+      },
+      {
+        "recipe_image": "chocolate_mousse.jpg",
+        "recipe_id": 6,
+        "recipe_name": "Decadent Chocolate Mousse",
+        "short_description": "Indulge in the velvety richness of this luscious chocolate mousse, a heavenly treat for chocolate lovers.",
+        "ingredients": [
+          "200 g dark chocolate",
+          "150 ml heavy cream",
+          "50 g sugar",
+          "2 eggs"
+        ],
+        "preparing_time": "20 min",
+        "calories": "200 calories"
+      },
+      {
+        "recipe_image": "spaghetti_bolognese.jpg",
+        "recipe_id": 7,
+        "recipe_name": "Spaghetti Bolognese",
+        "short_description": "Savor the comforting flavors of this classic Italian pasta dish, featuring a rich and hearty meat sauce.",
+        "ingredients": [
+          "400 g spaghetti",
+          "300 g ground beef",
+          "500 ml tomato sauce",
+          "2 cloves garlic"
+        ],
+        "preparing_time": "40 min",
+        "calories": "350 calories"
+      },
+      {
+        "recipe_image": "chicken_caesar_salad.jpg",
+        "recipe_id": 8,
+        "recipe_name": "Chicken Caesar Salad",
+        "short_description": "Enjoy a satisfying blend of crisp romaine lettuce, grilled chicken, crunchy croutons, and tangy Caesar dressing.",
+        "ingredients": [
+          "200 g grilled chicken breast",
+          "150 g romaine lettuce",
+          "100 g croutons",
+          "50 g parmesan cheese"
+        ],
+        "preparing_time": "20 min",
+        "calories": "280 calories"
+      }
+    ]
+  
