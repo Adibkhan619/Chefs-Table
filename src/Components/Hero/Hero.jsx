@@ -2,8 +2,8 @@
 
 const Hero = () => {
     return (
-        <div className="my-5 lg:space-y-5">
-            <div className="hero ">
+        <div className="my-5 space-x-5">
+            <div className="hero">
                 <img src="/public/img/Rectangle 1.png" alt="" />
   <div className=" "></div>
   <div className="hero-content text-center text-neutral-content">

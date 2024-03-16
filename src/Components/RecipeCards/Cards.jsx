@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import SingleCard from '../SingleCard/SingleCard';
 
-const Cards = () => {
+const Cards = ({handleWantToCook}) => {
     const [cards, setCards] = useState([]);
 
     useEffect(()=>{
@@ -13,14 +13,10 @@ const Cards = () => {
         
     }, [])
 
-
-
-
-
     return (
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-2 gap-16'>
             {
-                cards.map((card , idx) => <SingleCard card={card} key={idx}></SingleCard>)
+                cards.map((card , idx) => <SingleCard handleWantToCook={handleWantToCook} card={card} key={idx}></SingleCard>)
             }
         </div>
     );
