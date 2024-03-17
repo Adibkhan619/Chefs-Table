@@ -17,10 +17,11 @@ const SingleCard = ({ card, handleWantToCook }) => {
   return (
     <div className="border-2 border-gray-200 mx-5 lg:mx-0 p-5 space-y-5 rounded-3xl  text-gray-500">
       <img className="w-[350px] rounded-3xl" src={recipe_image} alt="" />
-      <h1>{recipe_name}</h1>
+      <h1 className="text-2xl font-semibold text-gray-700">{recipe_name}</h1>
       <p>{short_description}</p>
       <hr />
       <div>
+      <h1 className="text-xl font-medium pb-4 text-gray-700">Ingredients: {ingredients.length}</h1>
         {ingredients.map((item, idx) => (
           <Ingredients item={item} key={idx}></Ingredients>
         ))}
