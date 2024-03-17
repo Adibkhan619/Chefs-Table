@@ -8,7 +8,7 @@ const Cards = ({ handleWantToCook }) => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch("/public/itemData.json")
+    fetch("/itemData.json")
       .then((res) => res.json())
       .then((data) => setCards(data));
   }, []);

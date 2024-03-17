@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="my-5 space-x-5">
       <div className="hero">
-        <img className="lg:max-w-full px-5  " src="/public/img/Rectangle 1.png" alt="" />
+        <img className="lg:max-w-full px-5" src="/img/Rectangle.png" alt="" />
         <div className=" "></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="lg:max-w-4xl">

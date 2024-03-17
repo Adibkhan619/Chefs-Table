@@ -27,9 +27,9 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end hidden lg:flex">
-  <img className=" bg-gray-100 p-5 rounded-l-full" src="../../../public/icon/Frame.png" alt="" />
+  <img className=" bg-gray-100 p-5 rounded-l-full" src="/icon/Frame.png" alt="" />
     <input className="lg:flex hidden py-5 border-0  bg-gray-100 rounded-r-full mr-5" type="text" placeholder="Search" />
-    <img className="" src="../../../public/icon/Frame 5.png" alt="" />
+    <img className="" src="/icon/Frame 5.png" alt="" />
   </div>
 </div>
         </div>
