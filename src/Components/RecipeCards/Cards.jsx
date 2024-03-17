@@ -1,4 +1,5 @@
 // import React from 'react';
+import PropTypes from "prop-types";
 import { useEffect } from "react";
 import { useState } from "react";
 import SingleCard from "../SingleCard/SingleCard";
@@ -25,4 +26,7 @@ const Cards = ({ handleWantToCook }) => {
   );
 };
 
+Cards.propTypes = { 
+  handleWantToCook:PropTypes.func,
+}
 export default Cards;

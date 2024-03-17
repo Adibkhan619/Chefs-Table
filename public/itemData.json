@@ -11,7 +11,7 @@
           "400 g mushrooms"
         ],
         "preparing_time": "45 ",
-        "calories": "380 calories"
+        "calories": "380"
       },
       {
         "recipe_image": "/public/img/vegetable_stir_fry.jpg",
@@ -25,7 +25,7 @@
           "150 g broccoli"
         ],
         "preparing_time": "25 ",
-        "calories": "220 calories"
+        "calories": "220"
       },
       {
         "recipe_image": "/public/img/pasta_arrabbiata.jpg",
@@ -39,7 +39,7 @@
           "2 cloves garlic"
         ],
         "preparing_time": "30 ",
-        "calories": "320 calories"
+        "calories": "320"
       },
       {
         "recipe_image": "/public/img/sushi_roll.jpg",
@@ -53,7 +53,7 @@
           "100 g cucumber"
         ],
         "preparing_time": "40 ",
-        "calories": "250 calories"
+        "calories": "250"
       },
       {
         "recipe_image": "/public/img/grilled_salmon.jpg",
@@ -67,7 +67,7 @@
           "100 g asparagus"
         ],
         "preparing_time": "35 ",
-        "calories": "290 calories"
+        "calories": "290"
       },
       {
         "recipe_image": "/public/img/chocolate_mousse.jpg",
@@ -81,7 +81,7 @@
           "2 eggs"
         ],
         "preparing_time": "20 ",
-        "calories": "200 calories"
+        "calories": "200"
       },
       {
         "recipe_image": "/public/img/spaghetti_bolognese.png",
@@ -95,7 +95,7 @@
           "2 cloves garlic"
         ],
         "preparing_time": "40 ",
-        "calories": "350 calories"
+        "calories": "350"
       },
       {
         "recipe_image": "/public/img/Chicken Caesar Salad.png",
@@ -109,7 +109,7 @@
           "50 g parmesan cheese"
         ],
         "preparing_time": "20 ",
-        "calories": "280 calories"
+        "calories": "280"
       }
     ]
   

@@ -7,7 +7,6 @@ const SingleCard = ({ card, handleWantToCook }) => {
   const {
     recipe_name,
     recipe_image,
-    recipe_id,
     short_description,
     ingredients,
     preparing_time,
@@ -16,7 +15,7 @@ const SingleCard = ({ card, handleWantToCook }) => {
 //   console.log(recipe_name);
 
   return (
-    <div className="border-2 border-gray-200 p-5 space-y-5 rounded-3xl  text-gray-500">
+    <div className="border-2 border-gray-200 mx-5 lg:mx-0 p-5 space-y-5 rounded-3xl  text-gray-500">
       <img className="w-[350px] rounded-3xl" src={recipe_image} alt="" />
       <h1>{recipe_name}</h1>
       <p>{short_description}</p>
@@ -34,7 +33,7 @@ const SingleCard = ({ card, handleWantToCook }) => {
         </div>
         <div className="flex gap-3">
           <img className="w-5 h-5" src="/public/icon/fire.png" alt="" />
-          <p>{calories}</p>
+          <p>{calories} Calories</p>
         </div>
       </div>
 

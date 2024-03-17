@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
-      <div role="button" className="btn btn-ghost lg:hidden">
+      <div role="button" className="btn bg-gray-300 lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"></svg>
       </div>
       <ul className="menu text-gray-500 text-base menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">

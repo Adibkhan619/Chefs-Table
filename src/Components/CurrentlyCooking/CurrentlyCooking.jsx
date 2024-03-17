@@ -1,7 +1,7 @@
 // import React from 'react';
 import PropTypes from "prop-types";
 
-const CurrentlyCooking = ({currentlyCook, item}) => {
+const CurrentlyCooking = ({item}) => {
     // console.log(currentlyCook);
     const {recipe_name,       
         recipe_id,       
@@ -13,14 +13,13 @@ const CurrentlyCooking = ({currentlyCook, item}) => {
       <td>{recipe_id}</td>
       <td>{recipe_name}</td>
       <td>{preparing_time} min</td>
-      <td>{calories}</td>     
+      <td>{calories} Calories</td>     
     </tr>
        
     );
 };
 CurrentlyCooking.propTypes = {
-    currentlyCook: PropTypes.array,
-    item:PropTypes.object,
+      item:PropTypes.object,
   };
 
 
